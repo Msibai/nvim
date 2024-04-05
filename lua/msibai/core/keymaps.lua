@@ -15,7 +15,6 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next [D]iagn
 vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Show diagnostic [E]rror messages' })
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
 
-
 -- [[ window manipulation ]]
 -- Window Splitting
 vim.keymap.set('n', '<C-w>s', '<cmd>split<CR>', { desc = 'Split window [s]ide-by-side' })

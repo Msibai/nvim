@@ -1,8 +1,8 @@
 return {
-  "folke/tokyonight.nvim",
+  'folke/tokyonight.nvim',
   lazy = false,
   priority = 1000,
-      init = function()
-      vim.cmd.colorscheme 'tokyonight-storm'
-    end,
+  init = function()
+    vim.cmd.colorscheme('tokyonight-storm')
+  end,
 }

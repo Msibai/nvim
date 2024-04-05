@@ -2,20 +2,20 @@
 vim.opt.hlsearch = true
 
 vim.opt.number = true
-vim.opt.mouse = ""
+vim.opt.mouse = ''
 
 -- Sync clipboard between OS and Neovim.
 -- See `:help 'clipboard'`
 vim.opt.clipboard = 'unnamedplus'
 
-vim.opt.showcmd = false 
+vim.opt.showcmd = false
 vim.opt.undofile = true
 vim.opt.breakindent = true
 vim.opt.autoindent = true
 vim.opt.smartindent = true
 
 -- Case insensitive searching UNLESS /C or capital in search
-vim.opt.ignorecase = true 
+vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 vim.opt.signcolumn = 'yes'
@@ -28,12 +28,12 @@ vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300
 
 -- Put new windows below current
-vim.opt.splitbelow = true 
+vim.opt.splitbelow = true
 
 -- Put new windows right of current
-vim.opt.splitright = true 
+vim.opt.splitright = true
 
-vim.opt.splitkeep = "cursor"
+vim.opt.splitkeep = 'cursor'
 
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
