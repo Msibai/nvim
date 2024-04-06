@@ -33,15 +33,23 @@ return {
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-cmdline',
       'hrsh7th/cmp-buffer',
-      'roobert/tailwindcss-colorizer-cmp.nvim',
+      {
+        'roobert/tailwindcss-colorizer-cmp.nvim',
+        -- optionally, override the default options:
+        config = function()
+          require('tailwindcss-colorizer-cmp').setup({
+            color_square_width = 0,
+          })
+        end,
+      },
     },
 
     config = function()
       -- See `:help cmp`
       local cmp = require('cmp')
       local icons = require('msibai.core.icons')
-      print(icons.kinds)
       local luasnip = require('luasnip')
+
       luasnip.config.setup({})
 
       cmp.setup({
@@ -76,6 +84,7 @@ return {
 
         formatting = {
           format = function(entry, vim_item)
+            require('tailwindcss-colorizer-cmp').formatter(entry, vim_item)
             -- Kind icons
             vim_item.kind = string.format('%s %s', icons.kinds[vim_item.kind], vim_item.kind) -- This concatenates the icons with the name of the item kind
             -- Source
