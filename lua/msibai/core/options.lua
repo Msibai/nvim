@@ -2,6 +2,7 @@
 vim.opt.hlsearch = true
 
 vim.opt.number = true
+vim.wo.relativenumber = true
 vim.opt.mouse = ''
 
 -- Sync clipboard between OS and Neovim.
